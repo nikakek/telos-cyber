@@ -1,0 +1,1022 @@
+body {
+    margin: 0;
+    background-color: rgba(255, 255, 255, 1);
+    font-family: 'Inter', sans-serif;
+}
+
+/* header start.................................................................. */
+header {
+    height: 88px;
+    border-bottom: 1px solid rgba(181, 181, 181, 1);
+}
+
+.header-div{
+    width: calc(100% - 320px);
+    height: 100%;
+    margin: auto;
+    margin-left: 160px;
+    margin-right: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header-logo {
+    width: 65.4px;
+    height: 22.87px;
+    cursor: pointer;
+}
+
+
+.searchbar {
+    background-color: rgba(245, 245, 245, 1);
+    width: 372px;
+    height: 56px;
+    gap: 8px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: rgba(245, 245, 245, 1);
+    padding: 0;
+    border-radius: 8px;
+    outline: none;
+}
+
+.searchbar img {
+    width: 16px;
+    height: 16px;
+    padding: 4px;
+    margin-left: 16px;
+}
+
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    width: 369px;
+    gap: 40px;
+}
+
+.header-links a:first-child {
+    opacity: unset;
+}
+
+.header-links a {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.36px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 1);
+    opacity: 30%;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.header-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    gap: 20px;
+}
+
+.header-icons div {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-icons div:nth-child(1) img{
+    width: 20px;
+    height: 17.83px;
+}
+
+.header-icons div:nth-child(2) img{
+    width: 24.89px;
+    height: 22px;
+}
+
+.header-icons div:nth-child(3) img{
+    width: 17px;
+    height: 22px;
+}
+/* header end.................................................................. */
+
+/* first section start......................................................... */
+.first-section {
+    height: 632px;
+    background: linear-gradient(90.7deg, #211C24 0.64%, #211C24 101%); 
+}
+
+.first-section-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: calc(100% - 320px);
+    width: 100%;
+    margin: 0 160px 0 160px;
+}
+
+.first-section-texts {
+    width: 714px;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    padding-right: 24px;
+}
+
+#first-section-texts-1 {
+    max-width: 714px;
+    opacity: 40%;
+    font-weight: 600;
+    font-size: 25px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#first-section-texts-2 {
+    max-width: 714px;
+    font-weight: 100;
+    font-size: 96px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#first-section-texts-2 span{
+    font-weight: 600;
+    display: inline-block;
+    line-height: 72px;
+
+
+}
+
+#first-section-texts-3 {
+    max-width: 714px;
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba(144, 144, 144, 1);
+}
+
+#shop-now-white button{
+    width: 191px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 1);
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(255, 255, 255, 1);
+        color: black;
+    }
+}
+/* first section end......................................................... */
+
+/* second section start.......................................................... */
+.second-section-div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto auto;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.playstation {
+    grid-column: 1 / span 2;   
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 68px;
+}
+
+.playstation div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 48px;
+}
+
+.playstation-text, .playstation-text span{
+    font-weight: 500 !important;
+    font-size: 49px !important;
+}
+
+.item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(144, 144, 144, 1);
+}
+
+.macbook {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    gap: 12px;
+    background-color: rgba(237, 237, 237, 1);
+    overflow: hidden;
+}
+
+.airpods {
+    grid-column: 1;
+    grid-row: 2;
+    background: rgba(237, 237, 237, 1);
+    display: flex;
+    gap: 48px;
+    padding-right: 48px;
+    justify-content: start;
+}
+
+.airpods-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#airpods-text {
+    font-weight: 300;
+    font-size: 29px;
+    line-height: 40px;
+    flex-direction: row;
+}
+
+#airpods-text span {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 40px;
+}
+
+.vision {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(53, 53, 53, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 16px;
+    padding-right: 48px;
+    justify-content: start;
+}
+
+.macbook img {
+    max-width: 292px;
+    width: 100%;
+}
+
+#macbook-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 56px;
+}
+
+#macbook-texts-1 {
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 56px;
+    color: rgba(0, 0, 0, 1);
+}
+
+#macbook-texts-1 span {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 56px;
+}
+
+#macbook-texts-2 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: rgba(144, 144, 144, 1);
+}
+
+#shop-now-black button{
+    width: 191px;
+    height: 56px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 1);
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1)
+    }
+}
+
+/* second section end.......................................................... */
+
+
+/* third section start.......................................................... */
+.third-section {
+    width: calc(100%-320px);
+    padding: 80px 160px 0 160px;
+}
+
+.third-section-text {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-section-text h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 1%;
+    color: rgba(0, 0, 0, 1);
+}
+
+.third-section-arrows {
+    display: flex;
+    gap: 16px;
+}
+
+
+.third-section-cards {
+    gap: 32px;
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.card {
+    background-color: rgba(237, 237, 237, 1);
+    max-width: 160px;
+    height: 128px;
+    width: 100%;
+    gap: 8px;
+    border-radius: 15px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* third section end.......................................................... */
+
+/* fourth section start.......................................................... */
+
+.fourth-section {
+    width: calc(100%-320px);
+    padding: 80px 160px 0 160px;
+}
+
+.fourth-section-filter {
+    display: flex;
+    gap: 32px;
+}
+
+.fourth-section-filter div {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(139, 139, 139, 1);
+}
+
+.fourth-section-filter div:first-child {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid black;
+}
+
+.buy-cards {
+    display: grid;
+   grid-template-columns: repeat(4, 1fr); 
+   margin-top: 32px;
+   gap: 16px;
+}
+
+.buy-card-div {
+    background-color: rgba(246, 246, 246, 1);
+    max-width: 268px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 72px 16px 24px 16px;
+    border-radius: 9px;
+    position: relative;
+}
+
+.buy-card-div img:first-child {
+    position: absolute;
+    right: 16px;
+    top: 24px;
+}
+
+.buy-card-div-text {
+    max-width: 236px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.buy-now-black {
+    max-width: 188px;
+    width: 100%;
+}
+
+.buy-now-black button {
+    background-color: black;
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    cursor: pointer;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin-top: 8px;
+
+    &:hover {
+        background-color: #fff;
+        color: rgba(0, 0, 0, 1);
+    }
+}
+/* fourth section end.......................................................... */
+
+/* sixth section start.......................................................... */
+    
+.sixth-section {
+    margin-top: 80px;
+    background-image:url("/images/last-section-image.png");
+    width: 100%;
+    height: 448px;
+    gap: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.sixth-section-texts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .sixth-section-texts div:first-child :first-child{
+        text-align: center;
+        font-weight: 100;
+        font-size: 72px;
+        line-height: 72px;      
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .sixth-section-texts div:first-child span {
+        font-weight: 300 !important;
+    }
+
+    .sixth-section-texts div :nth-child(2){
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 32px;
+        text-align: center;
+        color: rgba(120, 120, 120, 1);
+    }
+/* sixth section end.......................................................... */
+
+/* footer start.................................................. */
+footer {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.footer-main {
+    width: calc(100% - 320px);
+    padding: 104px 160px;
+}
+
+.footer-div {
+    display: flex;
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+}
+
+.footer-text {
+    max-width: 384px;
+    height: 94.87px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-right: 113px;
+}
+
+.footer-text p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 23.87px;
+    color: rgba(207, 207, 207, 1);
+    margin: 0;
+}
+
+.footer-links {
+    max-width: 623px;
+    display: flex;
+    width: 100%;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 295.5px;
+    width: 100%;
+}
+
+.footer-div h2 {
+    font-size: 16px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.footer-links  a{
+    font-size: 14px;
+    line-height: 32px;
+    text-decoration: none;
+    color: rgba(207, 207, 207, 1)
+}
+
+.footer-contact {
+    display: flex;
+    gap: 36.33px;
+    max-width: 1120px;
+    width: 100%;
+    margin: auto;
+    margin-top: 24px;
+}
+
+.footer-contact div {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* pc and mobile rezolutions............................................. */
+.pc {
+    @media (max-width: 1119px) {
+        display: none !important;
+    }
+}
+
+.mobile {
+    @media (min-width: 1119px) {
+        display: none;
+    }
+}
+/* pc and mobile rezolutions............................................. */
+
+
+@media (max-width: 1119px) {
+    /* header start........................................................ */    
+    .header-div{
+        width: calc(100% - 32px);
+        height: 100%;
+        margin: auto;
+        margin-left: 16px;
+        margin-right: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    
+    .header-menu {
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+    /* header end............................................................. */
+
+    /* first section start......................................................... */
+    .first-section {
+        height: 769px;
+        background: linear-gradient(90.7deg, #211C24 0.64%, #211C24 101%); 
+        overflow-y: hidden;
+    }
+
+    .first-section-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        max-width: calc(100% - 32px);
+        width: 100%;
+        margin: 0 16px 0 16px;
+        gap: 48px;
+    }
+
+    .first-section-texts {
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        padding-top: 88px;
+        min-width: 0;
+        gap: 16px;
+        height: 344px;
+    }
+
+    #first-section-texts-1 {
+        line-height: 32px;
+    }
+
+    #first-section-texts-2 {
+        font-size: 72px;
+        line-height: 72px;
+        text-align: center;
+    }
+
+    #first-section-texts-3 {
+        font-size: 19px;
+        text-align: center;
+        line-height: 24px;
+    }
+
+    #first-section-texts-4 button{
+        margin-top: 16px;
+    }
+
+    .first-section-image {
+        height: fit-content;
+    }
+
+    .first-section-image img{
+        height: 289px;
+    }
+/* first section end......................................................... */
+
+/* second section start.................................................*/
+
+.playstation {
+    gap: 24px;
+}
+
+.playstation div, .airpods div, .vision div{
+    gap: 16px;
+    padding-right: 0;
+    padding: 0px 16px 40px;
+}
+
+.item img {
+    padding-top: 40px;
+    height: fit-content;
+}
+
+#airpods-text, #macbook-texts{
+    font-weight: 300;
+    font-size: 34px;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+#airpods-text {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.item p {
+    font-size: 16px;
+    text-align: center;
+}
+
+.macbook {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    gap: 12px;
+    background-color: rgba(237, 237, 237, 1);
+    justify-content: center;
+}
+
+.airpods {
+    grid-column: 1;
+    grid-row: 2;
+    background: rgba(237, 237, 237, 1);
+    display: flex;
+    gap: 48px;
+    padding-right: 48px;
+    justify-content: start;
+}
+
+.airpods-div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+#airpods-text {
+    font-weight: 300 !important;
+    font-size: 29px !important;
+    line-height: 40px !important;
+}
+
+#airpods-text span {
+    font-weight: 500;
+    font-size: 29px;
+    line-height: 40px;
+}
+
+.vision {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: rgba(53, 53, 53, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    gap: 16px;
+    padding-right: 48px;
+    justify-content: start;
+}
+
+.macbook img {
+    width: auto;
+    max-width: none;
+}
+
+#macbook-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 0;
+    padding: 40px 16px;
+}
+
+#macbook-texts-1 {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#macbook-texts-1 span {
+    font-weight: 300;
+    text-align: center;
+    font-size: 34px;
+}
+
+#macbook-texts-2 {
+    font-size: 16px;
+    text-align: center;
+}
+
+#shop-now-black button{
+    width: 100%;
+}
+
+.second-section-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    gap: 16px;
+    padding-right: 0;
+}
+
+.playstation,
+.macbook,
+.airpods,
+.vision {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.macbook {
+    order: 4;
+}
+
+.airpods {
+    order: 1;
+}
+
+.vision {
+    order: 2;
+}
+
+.playstation {
+    order: 3;
+}
+
+/* second section end.................................................*/
+
+/* third section start.......................................................... */
+.third-section{
+    width: calc(100% - 32px);
+    padding: 64px 16px 0 16px;
+}
+
+.third-section-cards {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    max-width: 343px;
+    margin: auto;
+    margin-top: 48px;
+    gap: 8px;
+}
+
+.third-section-arrows {
+    height: 32px;
+}
+/* third section end.......................................................... */
+
+/* fourth section start.......................................................... */
+
+.fourth-section {
+    width: calc(100%-32px);
+    padding: 32px 16px 0 16px;
+}
+
+.fourth-section-filter {
+    overflow: scroll;
+    white-space: nowrap;
+}
+
+.fourth-section-filter div {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(139, 139, 139, 1);
+}
+
+.fourth-section-filter div:first-child {
+    color: rgba(0, 0, 0, 1);
+    border-bottom: 2px solid black;
+}
+
+.buy-cards {
+    display: grid;
+   grid-template-columns: repeat(2, 0fr); 
+   margin-top: 32px;
+   gap: 16px;
+   justify-content: center;
+}
+
+.buy-card-div {
+    max-width: 163.5px;
+    padding: 24px 12px 24px 12px;
+    gap: 8px;
+}
+
+.buy-card-div img:first-child {
+    right: 12px;
+    top: 24px;
+}
+
+.buy-card-div img:nth-child(2) {
+    margin-top: 40px;
+    max-width: 104px;
+}
+
+.buy-card-div-text {
+    max-width: 139.5px;
+}
+
+.buy-now-black {
+    max-width: 188px;
+    width: 100%;
+}
+
+.buy-now-black button {
+   margin: 0;
+}
+
+.buy-card-div-text div:first-child {
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* fourth section end.......................................................... */
+
+/* sixth section start.......................................................... */
+    
+.sixth-section {
+    margin-top: 56px;
+    background-image:url("/images/last-section-image-mobile.png");
+    height: 512px;
+    background-size: co;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.sixth-section-texts {
+        width: calc(100% - 32px);
+        padding: 0 16px 0 16px;
+    }
+
+    .sixth-section-texts div:first-child :first-child{
+        font-size: 48px;
+    }
+
+/* sixth section end.......................................................... */
+
+/* footer start.............................................................*/
+    .footer-main {
+        width: calc(100% - 32px);
+        padding: 48px 16px;
+    }
+    
+    .footer-div {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .footer-text {
+        height: auto;
+        gap: 16px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: none;
+    }
+    
+    .footer-text p {
+        font-size: 13px;
+        line-height: 24px;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .footer-links {
+        max-width: 623px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        text-align: center;
+    }
+    
+    .footer-links div {
+        flex-direction: column;
+        max-width: none;
+        margin-top: 32px;
+    }
+    
+    .footer-div h2 {
+        font-size: 16px;
+        line-height: 16px;
+        color: rgba(255, 255, 255, 1);
+    }
+    
+    .footer-links  a{
+        font-size: 14px;
+        line-height: 32px;
+        text-decoration: none;
+        color: rgba(207, 207, 207, 1)
+    }
+    
+    .footer-contact {
+        display: flex;
+        gap: 25.67px;
+        max-width: 1120px;
+        width: fit-content;
+        margin-top: 24px;
+    }
+    /*footer end.................................................*/
+}
+
+
