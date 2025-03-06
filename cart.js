@@ -28,7 +28,7 @@ function updateCartUI() {
         cartItem.classList.add('item');
 
         // Ensure price is defined and correctly multiplied by quantity
-        const itemPrice = product.price ? (product.price * product.quantity).toFixed(2) : "0.00";
+        const itemPrice = product.price ? (parseFloat(product.price.replace('$', '')) * product.quantity).toFixed(2) : "0.00";
 
         cartItem.innerHTML = `
             <img src="${product.image || '/default.png'}" alt="${product.name}" class="product-img" />
@@ -52,8 +52,6 @@ function updateCartUI() {
     attachEventListeners();
     updateTotalCost();
 }
-
-
 
 function attachEventListeners() {
     document.querySelectorAll('.plus-btn').forEach(button => {
@@ -93,8 +91,8 @@ function attachEventListeners() {
 }
 
 function updateTotalCost() {
-    let subtotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    document.querySelectorAll('.total-cost span:last-child').forEach(el => el.textContent = `$${subtotal}`);
+    let subtotal = cart.reduce((sum, item) => sum + parseFloat(item.price.replace('$', '')) * item.quantity, 0);
+    document.querySelectorAll('.total-cost span:last-child').forEach(el => el.textContent = `$${subtotal.toFixed(2)}`);
 }
 
 // Example product to add (remove this in actual usage, just for testing)
@@ -105,15 +103,13 @@ document.querySelectorAll('.buy-now-btn')?.forEach(button => {
             id: "#25139526913984",
             name: "Apple iPhone 14 Pro Max 128Gb Deep Purple",
             image: "/images/card-iphone.svg",
-            price: 1399
+            price: "$1399"
         };
         addToCart(product);
     });
 });
 
 window.addEventListener('load', updateCartUI);
-
-
 
 document.querySelectorAll('.buy-now-btn')?.forEach(button => {
     button.addEventListener('click', function() {
@@ -122,7 +118,7 @@ document.querySelectorAll('.buy-now-btn')?.forEach(button => {
             id: "#25139526913984",
             name: "Apple iPhone 14 Pro Max 128Gb Deep Purple",
             image: "/images/card-iphone.svg",
-            price: 1399
+            price: "$1399"
         };
         addToCart(product);
         updateCartUI(); // 💡 This updates the cart live
